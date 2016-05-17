@@ -5,3 +5,7 @@
 .center {
   text-align: center;
 }
+.larger {
+  font-size: 200%;
+  font-weight: 900;
+}

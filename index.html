@@ -1,28 +1,39 @@
-<html ng-app="NDA">
+<html >
   <head>
   <link rel="stylesheet" href="css.css">
   
   </head>
-  <header class="center"> Non-Disclosure and Intellectual Property Rights Agreement 
+
+  <header class="center larger"> Non-Disclosure and Intellectual Property Rights Agreement 
   </header>
-  <body>
-    <div class = "center" ng-controller = "NDAdoc as doc">
-        <form>
-          <p> Proprietor's name: </p>
-          <input ng-model="doc.proprietor" type="text">
-          <p> Recipeint's name: </p>
-           <input ng-model="doc.recipient" type="text">
-          <p> Intellectual Property: </p>
-           <input ng-model="doc.IP" type="text">
-           <p>
-           <input type="submt" value="Submit">
-           <p>
-        </form>
+  <body ng-app="NDA" >
+    <div ng-controller = "NDAdoc as doc"> 
+      <div class = "center" >
+          <form ng-submit="entered()">
+            <p> Proprietor's name: </p>
+            <input ng-model="doc.proprietor" type="text">
+            <p> Recipeint's name: </p>
+             <input ng-model="doc.recipient" type="text">
+            <p> Intellectual Property: </p>
+             <input ng-model="doc.IP" type="text">
+             <p> Date: </p>
+             <input ng-model="doc.date" type="date">
+             <p> Signature: </p>
+             <input ng-model="doc.signature" type="text">
+             <p>
+             <input type="submit" value="SIGN">
+             </p>
 
-    </div>
+          </form>
+          <br>
+          <br>
+          <br>
+          <p class='larger'> The Agreement </p>
 
-    <ipa></ipa>
 
+        <ipa></ipa>
+      <div>
+   </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
     <script src="app.js"></script>
