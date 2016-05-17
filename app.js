@@ -1,10 +1,11 @@
 
 var app = angular.module('NDA', ['ngRoute']);
 
-app.controller('NDAdoc', function () {
+app.controller('NDAdoc', function ($location) {
   this.doc = {};
   this.entered = function () {
-    $location.path('/submitted')
+    console.log("INside entered!")
+    return $location.path('/submitted')
   }
 });
 
@@ -16,7 +17,7 @@ app.directive('ipa', function () {
 });
 
 app.controller('entered', function () {
-
+  this.placeholder=[];
 })
 
 app.config(function($routeProvider, $httpProvider) {
