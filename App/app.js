@@ -1,5 +1,5 @@
 
-var app = angular.module('NDA', ['ngRoute']);
+var app = angular.module('NDA');
 
 angular.module('NDA').directive('ipa', function () {
   return {
