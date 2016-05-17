@@ -19,7 +19,8 @@ app.config(function($routeProvider, $httpProvider) {
   .when( 
     '/submitted', {
       templateUrl: 'Signed/entered.html',
-      controller: 'entered'
+      controller: 'signed',
+      controllerAs: 'signed'
 
   })
 });
