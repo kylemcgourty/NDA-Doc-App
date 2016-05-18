@@ -13,7 +13,7 @@ angular.module('NDA', ['ngRoute']).controller('NDAdoc', function ($scope, $locat
     savedSignatures.push({signee: $scope.doc.recipient, 
       subject: $scope.doc.IP,
       date: $scope.doc.date});
-    console.log(savedSignatures);
+    
     return $location.path('/submitted')
 
   }

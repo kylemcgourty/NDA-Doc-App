@@ -23,4 +23,10 @@ app.config(function($routeProvider, $httpProvider) {
       controllerAs: 'signed'
 
   })
+  .when(
+    '/signees', {
+      templateUrl: 'CollectedSignatures/CollectedSignatures.html',
+      controller: 'collection'
+      
+    })
 });

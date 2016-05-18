@@ -1,0 +1,19 @@
+<br>
+<br>
+<br>
+<div class="center larger"> Collected Signatures </div>
+<div class="center-block" ng-repeat="sig in savedSignatures">
+  <br>
+  <br>
+  <p class="bigger"> Signee: </p> 
+  {{sig.signee}}
+  <p class="bigger"> Intellectual Property: </p>
+  {{sig.subject}}
+  <p class="bigger"> Date: </p>
+  {{sig.date}}
+  <br>
+  <br>
+</div>
+<form class="center" ng-submit="goBack()">
+<button> Create another NDA-IPRA </button>
+</form>
